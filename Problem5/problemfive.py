@@ -13,6 +13,8 @@ def smallest_positive_multiple(lower, upper):
         for i in range(lower,upper):
             if answer%i == 0:
                 checker += 1
+            else:
+                break
         if checker == upper:
             break
         else:
